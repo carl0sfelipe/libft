@@ -6,19 +6,19 @@
 /*   By: csiqueir <csiqueir@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 08:22:29 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/05/09 08:25:12 by csiqueir         ###   ########.fr       */
+/*   Updated: 2022/05/11 19:22:28 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*	strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-int i;
-
-i=0;
-
-	while(*strchr[i])
+	while (*s)
+	{
+		if (*s == c)
 		{
-if(strchr[i] == c){
-return strchr[-=i]}
+			return ((char *)s);
+		}
+		s++;
+	}
+	return ((char *)s);
 }
-				}
