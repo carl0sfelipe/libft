@@ -3,22 +3,28 @@
 #include<ctype.h>
 #include<string.h>
 
+int main () {
+    char str1[15];
+   char str2[15];
+   char str3[15];
+   char str4[15];
+   int ret;
+	int rep;
 
-int	main()
-{
-	const char *stri = "qwertyrewq";
-	char a;
-	a = 'r';
-    char b;
-    b = '\n';
+	strcpy(str1, "adshjgcaad");
+	strcpy(str2, "aadssduhaac");
 
-char *result;
+	strcpy(str3, "aaaad");
+	strcpy(str4, "aaaac");
 
-char *result2;
-result = ft_strrchr(stri,a);
-result2 = strrchr(stri,a);
 
-	printf("minha funçao: %s função original: %s\n",result, result2);
 
-return (1);
+      ret = strncmp(str1, str2, 6);
+
+      rep = ft_strncmp(str1, str2, 6);
+
+  printf("\n\n%d\n\n",ret);
+   
+   printf("\n\n%d\n\n",rep);
+   return(0);
 }
