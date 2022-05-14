@@ -1,25 +1,24 @@
 #include<stdio.h>
 #include "libft.h"
 #include<ctype.h>
+#include<string.h>
 
-
-int ft_isdigit(int c);
 
 int	main()
 {
+	const char *stri = "qwertyrewq";
 	char a;
-	a = 's';
+	a = 'r';
     char b;
     b = '\n';
 
-int result;
+char *result;
 
-int result2;
-result = ft_isprint(b);
-result2 = isprint(b);
+char *result2;
+result = ft_strrchr(stri,a);
+result2 = strrchr(stri,a);
 
-
-	printf("minha funçao: %d função original: %d\n",result, result2);
+	printf("minha funçao: %s função original: %s\n",result, result2);
 
 return (1);
 }
