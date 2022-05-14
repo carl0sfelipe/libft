@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: csiqueir <csiqueir@student.42.rio>         +#+  +:+       +#+        */
+/*   By: csiqueir <carlos.felipe@hotmail.com.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/07 03:17:38 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/05/11 21:22:54 by csiqueir         ###   ########.fr       */
+/*   Created: 2022/05/11 18:56:17 by csiqueir          #+#    #+#             */
+/*   Updated: 2022/05/13 19:33:59 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	ft_toupper(int c)
-{
-	unsigned int	i;
+#ifndef LIBFT_H
+# define LIBFT_H
 
-	i = 0;
-	if (c >= 'a' && c <= 'z')
-	{
-		c -= 32;
-	}
-	return (c);
-}
+#include<stdlib.h>
+
+size_t ft_strlen(char *str);
+int ft_isdigit(int c);
+int ft_isalpha(int c);
+int ft_isprint(int c);
+
+#endif

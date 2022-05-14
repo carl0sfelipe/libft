@@ -6,10 +6,10 @@
 /*   By: csiqueir <carlos.felipe@hotmail.com.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 00:59:23 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/05/07 02:30:19 by csiqueir         ###   ########.fr       */
+/*   Updated: 2022/05/11 20:53:12 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stddef.h>
+#include "libft.h"
 
 size_t	ft_strlen(char *str)
 {

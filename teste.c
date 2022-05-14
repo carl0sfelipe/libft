@@ -1,26 +1,25 @@
 #include<stdio.h>
-#include "ft_isalpha.c"
+#include "libft.h"
 #include<ctype.h>
-#include "ft_isdigit.c"
-#include "ft_isalnum.c"
-#include "ft_isascii.c"
-#include "ft_isprint.c"
+
+
+int ft_isdigit(int c);
 
 int	main()
 {
 	char a;
-	a = ' ';
+	a = 's';
     char b;
-    b = a-1;
+    b = '\n';
 
 int result;
 
 int result2;
-result = ft_isprint(a);
-result2 = isprint(a);
+result = ft_isprint(b);
+result2 = isprint(b);
 
 
-	printf("minha funçao: %d função original: %d",result, result2);
+	printf("minha funçao: %d função original: %d\n",result, result2);
 
 return (1);
 }
