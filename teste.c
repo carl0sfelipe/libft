@@ -4,27 +4,27 @@
 #include<string.h>
 
 int main () {
-    char str1[15];
-   char str2[15];
-   char str3[15];
-   char str4[15];
-   int ret;
-	int rep;
+    char *str1[15];
+   char *str2[15];
+   char *str3 ="sdf";
+   char *str4 = "jsdhg sdf jhdgs";
+  // char *ret;
+  // char *rep;
 
-	strcpy(str1, "adshjgcaad");
-	strcpy(str2, "aadssduhaac");
+//	strcpy(str4, "adsdsfkhdfsjkhdfsjh");
+//	strcpy(str3, "fkh");
 
-	strcpy(str3, "aaaad");
-	strcpy(str4, "aaaac");
+//	strcpy(str1, "aaaad");
+//	strcpy(str2, "aaaac");
 
 
 
-      ret = strncmp(str1, str2, 6);
+//      ret = strnstr(str4, str3, 6);
 
-      rep = ft_strncmp(str1, str2, 6);
+  //    rep = ft_strnstr(str4, str3, 6);
 
-  printf("\n\n%d\n\n",ret);
+  printf("\nfunçao original: \n%s\n\n", strnstr(str4, str3, 6));
    
-   printf("\n\n%d\n\n",rep);
+   printf("\nminha funçao: \n%s\n\n", ft_strnstr(str4, str3, 6));
    return(0);
 }
