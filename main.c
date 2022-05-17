@@ -1,6 +1,10 @@
 #include <string.h>
 #include <stdio.h>
 #include "libft.h"
+
+char *strnstr(const char *s, const char *find, size_t slen);
+
+
 int main()
 {
     // Take any two strings
