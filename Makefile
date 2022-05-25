@@ -31,7 +31,7 @@ ${NAME}:
 all:		${NAME}
 
 clean:
-	${RM} ${NAME} *.c
+	${RM} ${NAME} *.o
 
 re: clean all
 
