@@ -6,7 +6,7 @@
 /*   By: csiqueir <carlos.felipe@hotmail.com.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/13 20:19:43 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/05/25 19:23:20 by csiqueir         ###   ########.fr       */
+/*   Updated: 2022/05/25 20:32:19 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,8 +42,7 @@ return ft_strlen((char *)src);
 int main(void)
 {
     char string[] = "Hello there,12345";
-    char buffer[7];
-    int r;
+    char buffer[77];
 
 
 
