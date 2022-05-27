@@ -38,33 +38,3 @@ if (dstsize != 0 )
 return ft_strlen((char *)src);
 }
 
-
-int main(void)
-{
-    char string[] = "Hello there,12345";
-    char buffer[77];
-
-
-
-    printf("string '%s' buffer '%s'\n", string, buffer );
-    
-
-	ft_strlcpy(buffer,string, 18);
-
-printf("buffer %s \n", buffer);
-
-
-char string2[] = "Hello there,12345";
-
-
-    printf("string '%s' buffer '%s'\n", string, buffer );
-
-strlcpy(buffer,string2, 18);
-	
-printf("buffer %s \n", buffer);
-
-	return 0;
-}
-  //  printf("Copied '%s' into '%s', length %d with ft_strlpy() with size = %d\n", string, buffer, r , size );
-//r = strlcpy(buffer, string, size);
- //   printf("Copied '%s' into '%s', length %d with strlcpy() with size = %d\n", string, buffer, r, size );
