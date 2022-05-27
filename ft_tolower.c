@@ -6,15 +6,12 @@
 /*   By: csiqueir <csiqueir@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 03:00:48 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/05/11 21:24:44 by csiqueir         ###   ########.fr       */
+/*   Updated: 2022/05/27 20:27:35 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	ft_tolower(int c)
+int	ft_tolower(int c)
 {
-	unsigned int	i;
-
-	i = 0;
 	if (c >= 'A' && c <= 'Z')
 	{
 		c += 32;

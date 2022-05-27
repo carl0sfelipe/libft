@@ -6,15 +6,12 @@
 /*   By: csiqueir <csiqueir@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 03:17:38 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/05/11 21:22:54 by csiqueir         ###   ########.fr       */
+/*   Updated: 2022/05/27 20:26:56 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	ft_toupper(int c)
+int ft_toupper(int c)
 {
-	unsigned int	i;
-
-	i = 0;
 	if (c >= 'a' && c <= 'z')
 	{
 		c -= 32;
