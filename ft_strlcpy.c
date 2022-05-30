@@ -6,7 +6,7 @@
 /*   By: csiqueir <carlos.felipe@hotmail.com.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/13 20:19:43 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/05/25 20:32:19 by csiqueir         ###   ########.fr       */
+/*   Updated: 2022/05/30 18:32:24 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,20 +21,15 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 index = 0;
 if (dstsize != 0 )
 {
-	while (index < dstsize - 1)
+	while (src[index] != '\0' && index < dstsize - 1)
 	{
-
 		dst[index] = src[index];
-
-		if (index+1 == dstsize)
-		{
-			dst[index] = '\0';
-		}
-
 		index++;
 	}
+	dst[index] = '\0';
 
-}
+} 
+{
 return ft_strlen((char *)src);
 }
-
+}
