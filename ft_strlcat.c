@@ -6,7 +6,7 @@
 /*   By: csiqueir <carlos.felipe@hotmail.com.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/13 20:19:43 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/05/26 19:25:00 by csiqueir         ###   ########.fr       */
+/*   Updated: 2022/05/30 19:36:36 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,12 @@ size_t		ft_strlcat(char *dst, const char *src, size_t size)
     i = 0;
 	dstI = 0;
 
-	
 		dstI = strlen(dst);
-	while (src[i] && ((dstI + i + 1) < size))
+	while ((src[i] != '\0' || src[i+1] ) && ((dstI + i + 1) < size))
 	{
 		dst[dstI + i] = src[i];
 		i++;
 	}
-	if (dstI >= size)
 		dst[dstI + i] = '\0';
-	return (dstI + ft_strlen((char *)src));
+	return (dstI + ft_strlen((char *)src)-1);
 }
