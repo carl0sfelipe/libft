@@ -6,7 +6,7 @@
 /*   By: csiqueir <carlos.felipe@hotmail.com.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 18:56:17 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/06/01 17:41:05 by csiqueir         ###   ########.fr       */
+/*   Updated: 2022/06/03 18:39:43 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,7 @@ int ft_strncmp(const char *s1, const char *s2, size_t n);
 char *ft_strnstr(const char *haystack, const char *needle, size_t len);
 int	ft_tolower(int c);
 int ft_toupper(int c);
-
+void *ft_memset(void *b,int c, size_t len);
+void ft_bzero(void *s, size_t n);
 
 #endif
