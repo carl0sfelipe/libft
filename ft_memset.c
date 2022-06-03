@@ -6,7 +6,7 @@
 /*   By: csiqueir <csiqueir@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/03 17:54:32 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/06/03 18:14:26 by csiqueir         ###   ########.fr       */
+/*   Updated: 2022/06/03 18:36:39 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
@@ -25,7 +25,7 @@ point = (char *)b;
   }
 return (point);
 }
-
+/*
 int main()
 {
    char str[50];
@@ -58,4 +58,4 @@ int main()
 
    
    return(0);
-}
+}*/
