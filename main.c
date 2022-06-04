@@ -2,28 +2,25 @@
 #include <stdio.h>
 #include "libft.h"
 
-char *strnstr(const char *s, const char *find, size_t slen);
-
-
 int main()
 {
     // Take any two strings
     char s1[] = "GeeksforGeeks";
-    char s2[] = "eks";
+    char s2[] = "for";
     char* p;
-  char* o;
+ 	char* o;
 
     // Find first occurrence of s2 in s1
-    p = strnstr(s1, s2, 15);
-  o = ft_strnstr(s1,s2,15);
+    p = ft_strnstr(s1, s2,8);
+ 	o = strnstr(s1, s2,8); 
     // Prints the result
-    if (p) {
-        printf("String found\n");
-        printf("funçao original: Fi rst occurrence of string '%s' in '%s' is '%s'\n", s2, s1, p);
-        printf("minha funçao: Fi rst occurrence of string '%s' in '%s' is '%s'", s2, s1, o);
+   
+   
+	if (p==o) {
+        printf("Resultado bateu\n");
+        printf("First occurrence of string '%s' in '%s' is '%s'", s2, s1, o);
     } else
-        printf("String not found\n");
+        printf("sua funçao ta zuada, retornou %s  \n",o);
   
     return 0;
 }
-

@@ -6,11 +6,11 @@
 /*   By: csiqueir <csiqueir@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/07 03:17:38 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/05/27 20:26:56 by csiqueir         ###   ########.fr       */
+/*   Updated: 2022/06/01 13:25:36 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{

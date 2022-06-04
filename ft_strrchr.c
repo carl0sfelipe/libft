@@ -6,7 +6,7 @@
 /*   By: csiqueir <csiqueir@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 19:26:17 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/05/11 21:36:27 by csiqueir         ###   ########.fr       */
+/*   Updated: 2022/06/01 13:27:04 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,5 @@ char	*ft_strrchr(const char *s, int c)
 		}
 	s--;
 	}
-
-	 return ((char *)s);
+	return ((char *)s);
 }
-

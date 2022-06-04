@@ -1,33 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: csiqueir <csiqueir@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/17 20:07:55 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/06/01 17:27:57 by csiqueir         ###   ########.fr       */
+/*   Created: 2022/06/03 18:50:46 by csiqueir          #+#    #+#             */
+/*   Updated: 2022/06/04 15:59:07 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+#include "libft.h"
 
-int	ft_atoi(const char *str)
+void *ft_memchr(const void *s, int c, size_t n)
 {
-	int	result;
-	int	signal;
-	int	index;
+	unsigned char *point;
+	size_t i;
 
-	result = 0;
-	signal = 1;
-	index = 0;
-	if (str[0] == '-')
+	i=0;
+	point = (unsigned char *)s;
+	while(n--)
 	{
-		signal = -1;
-		index++;
+		if(point[i]==(unsigned char)c)
+		{
+		return (&point[i]);
+		}
+	i++;
 	}
-	while (str[index] != '\0')
-	{
-		result = result * 10 + str[index] - '0';
-		index++;
-	}
-	return (signal * result);
+
+return (0);
 }

@@ -1,33 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: csiqueir <csiqueir@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/17 20:07:55 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/06/01 17:27:57 by csiqueir         ###   ########.fr       */
+/*   Created: 2022/06/04 18:00:28 by csiqueir          #+#    #+#             */
+/*   Updated: 2022/06/04 18:23:46 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(const char *str)
-{
-	int	result;
-	int	signal;
-	int	index;
+#include "libft.h"
 
-	result = 0;
-	signal = 1;
-	index = 0;
-	if (str[0] == '-')
-	{
-		signal = -1;
-		index++;
-	}
-	while (str[index] != '\0')
-	{
-		result = result * 10 + str[index] - '0';
-		index++;
-	}
-	return (signal * result);
+int ft_memcmp(const void *str1, const void *str2,size_t)
+{
+const unsigned char	*string1;
+const unsigned char	*string2;
+size_t	i;
+
+i = 0;
+string1 = (const unsigned char *)str1;
+string2 = (const unsigned char *)str2;
+while (i < n)
+{
+if (string1[i] != string2[i])
+{
+return (string1[i] - string2[i]);
+}
+i++;
+}
+return (0);
 }
