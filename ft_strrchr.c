@@ -9,23 +9,18 @@
 /*   Updated: 2022/06/08 15:34:34 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
-	size_t	index;
+		int	sz_temp;
 
-	index = ft_strlen((char *) s) - 1;
-	while (s[index] && index >= 0)
-	{
-		if (c == '\0')
-			return ((char *)&s[ft_strlen((char *) s)]);
-		if (s[index] == c)
-		{
-			return ((char *)&s[index]);
-		}
-	s--;
-	}
-	return (NULL);
+			sz_temp = ft_strlen(s);
+				while (sz_temp >= 0)
+						{
+									if (s[sz_temp] == (char)c)
+													return ((char *)&s[sz_temp]);
+											sz_temp--;
+												}
+					return ((char *)0);
 }
