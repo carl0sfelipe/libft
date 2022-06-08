@@ -6,7 +6,7 @@
 /*   By: csiqueir <csiqueir@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/04 18:24:42 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/06/06 20:24:01 by csiqueir         ###   ########.fr       */
+/*   Updated: 2022/06/08 15:00:29 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void *ft_memmove(void *dst, const void *src, size_t len)
 
 	source = (char*)src;
 	dest = (char *)dst;
-	
+	i = 0;
 	if (dst == NULL && src == NULL)
 		return (0);
 	if (dest > source)
