@@ -43,4 +43,6 @@ clean:
 
 re: clean all
 
-
+so:
+		$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
+			cc -nostartfiles -shared -o libft.so $(OBJS)

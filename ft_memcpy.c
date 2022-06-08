@@ -17,9 +17,9 @@ void	*memcpy(void *dst, const void *src,size_t n)
 char	*destiny;
 const char *source;
 
-destiny = dst;
-source = src;
-if (dst == NULL && src == NULL)
+destiny = (char *)dst;
+source = (char *)src;
+if (!destiny && !source)
 {
 	return (0);
 }

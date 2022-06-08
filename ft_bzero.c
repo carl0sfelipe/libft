@@ -24,7 +24,7 @@ char str[] = "hello world";
 puts(str);
 
 ft_bzero(str,11);
-int i =0;
+unsigned int i =0;
 
 while(i< sizeof(str)-1)
 {

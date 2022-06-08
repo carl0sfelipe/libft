@@ -15,7 +15,7 @@ int	ft_atoi(const char *str)
 {
 	int	unit;
 	int	i;
-	int	sign;
+	int	signal;
 
 	i = 0;
 	unit = 0;
