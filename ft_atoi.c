@@ -6,10 +6,9 @@
 /*   By: csiqueir <csiqueir@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/17 20:07:55 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/06/01 17:27:57 by csiqueir         ###   ########.fr       */
+/*   Updated: 2022/06/08 15:56:41 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 int	ft_atoi(const char *str)
 {
