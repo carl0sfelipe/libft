@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: csiqueir <csiqueir@student.42.rio>         +#+  +:+       +#+        */
+/*   By: csiqueir <carlos.felipe@hotmail.com.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/01 17:27:13 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/06/01 17:27:17 by csiqueir         ###   ########.fr       */
+/*   Updated: 2022/06/09 18:42:27 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,13 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	unsigned int	dst_i;
 	int				src_i;
 
-	src_len = ft_strlen((char *)src);
+	src_len = ft_strlen(src);
 	dst_len = ft_strlen(dst);
 	dst_i = ft_strlen(dst);
 	src_i = 0;
-	if (dstsize < 1)
+	if (dstsize == 0)
+		return (src_len);
+	if (dstsize < dst_len)
 		return (src_len + dstsize);
 	while (src[src_i] != '\0' && dst_i < dstsize - 1)
 	{
@@ -32,8 +34,5 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		src_i++;
 	}
 	dst[dst_i] = '\0';
-	if (dstsize < dst_len)
-		return (src_len + dstsize);
-	else
-		return (dst_len + src_len);
+	return (dst_len + src_len);
 }
