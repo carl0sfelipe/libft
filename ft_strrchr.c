@@ -6,21 +6,21 @@
 /*   By: csiqueir <csiqueir@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 19:26:17 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/06/08 15:34:34 by csiqueir         ###   ########.fr       */
+/*   Updated: 2022/06/08 20:11:04 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include "libft.h"
 
 char	*ft_strrchr(const char *s, int c)
 {
-		int	sz_temp;
+	int	index;
 
-			sz_temp = ft_strlen(s);
-				while (sz_temp >= 0)
-						{
-									if (s[sz_temp] == (char)c)
-													return ((char *)&s[sz_temp]);
-											sz_temp--;
-												}
-					return ((char *)0);
+	index = ft_strlen(s);
+	while (index >= 0)
+	{
+		if (s[index] == (char)c)
+			return ((char *)&s[index]);
+		index--;
+	}
+	return ((char *)0);
 }

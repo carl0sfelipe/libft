@@ -19,7 +19,10 @@ SRCS	= 	ft_atoi.c\
 			ft_strnstr.c\
 			ft_strrchr.c\
 			ft_tolower.c\
-			ft_toupper.c
+			ft_toupper.c\
+			ft_calloc.c\
+			ft_substr.c\
+			ft_strjoin.c
 
 OBJS	= ${SRCS:.c=.o}
 
@@ -39,10 +42,10 @@ ${NAME}:
 all:		${NAME}
 
 clean:
-	${RM} ${NAME} ${OBJS}
+	${RM} ${OBJS}
 
-re: clean all
+fclean:		clean
+	${RM} ${NAME}
 
-so:
-		$(CC) -nostartfiles -fPIC $(CFLAGS) $(SRCS)
-			cc -nostartfiles -shared -o libft.so $(OBJS)
+re: fclean all
+

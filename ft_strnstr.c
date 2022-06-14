@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: csiqueir <csiqueir@student.42.rio>         +#+  +:+       +#+        */
+/*   By: csiqueir <carlos.felipe@hotmail.com.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/16 19:04:09 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/06/02 20:35:50 by csiqueir         ###   ########.fr       */
+/*   Updated: 2022/06/09 18:51:23 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
@@ -26,7 +27,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		if (haystack[haystack_i] == needle[needle_i])
 		{
 			result = (char *)&haystack[haystack_i];
-			while (needle[needle_i]
+			while (needle[needle_i] && haystack_i < len
 				&& haystack[haystack_i] == needle[needle_i])
 			{
 				needle_i++;

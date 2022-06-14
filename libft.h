@@ -6,7 +6,7 @@
 /*   By: csiqueir <carlos.felipe@hotmail;om.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 18:56:17 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/06/03 18:39:43 by csiqueir         ###   ########.fr       */
+/*   Updated: 2022/06/13 18:56:41 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include<stdlib.h>
 
-size_t  ft_strlen(char *str);
+size_t  ft_strlen(const char *str);
 int ft_isdigit(int c);
 int ft_isalpha(int c);
 int ft_isprint(int c);
@@ -48,6 +48,8 @@ void ft_bzero(void *s, size_t n);
 void *ft_memchr(const void *s, int c, size_t n);
 void *ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_calloc(size_t count, size_t size);
+char	*ft_strjoin(const char *s1, const char *s2);
+char	*ft_substr(const char *src, unsigned int start, size_t end);
 
 
 #endif

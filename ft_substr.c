@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: csiqueir <csiqueir@student.42.rio>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/06/13 20:28:16 by csiqueir          #+#    #+#             */
+/*   Updated: 2022/06/13 21:18:06 by csiqueir         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+//#include <stdlib.h>
+//#include <string.h>
+#include "libft.h"
 
-
-char* ft_substr(const char *src, unsigned int start, size_t end)
+char	*ft_substr(const char *src, unsigned int start, size_t end)
 {
     // get the length of the destination string
     int size = end - start;
@@ -30,9 +42,9 @@ char* ft_substr(const char *src, unsigned int start, size_t end)
     dest[index] = '\0';
  
     // return the destination string
-    return dest;
+    return (dest);
 }
-
+/*
 int main()
 {
     char src[] = "substr function Implementation";
@@ -47,4 +59,4 @@ int main()
 
  
     return 0;
-}
+}*/
