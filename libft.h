@@ -6,7 +6,7 @@
 /*   By: csiqueir <carlos.felipe@hotmail;om.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 18:56:17 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/06/13 18:56:41 by csiqueir         ###   ########.fr       */
+/*   Updated: 2022/06/14 21:12:45 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ void *ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_strjoin(const char *s1, const char *s2);
 char	*ft_substr(const char *src, unsigned int start, size_t end);
-
+char *ft_strtrim(char const *s1, char const *set);
+void ft_putchar_fd(char c, int fd);
 
 #endif
