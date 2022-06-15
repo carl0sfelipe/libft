@@ -6,7 +6,7 @@
 /*   By: csiqueir <carlos.felipe@hotmail;om.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 18:56:17 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/06/14 21:40:26 by csiqueir         ###   ########.fr       */
+/*   Updated: 2022/06/15 19:42:50 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,5 +54,7 @@ char	*ft_substr(const char *src, unsigned int start, size_t end);
 char *ft_strtrim(char const *s1, char const *set);
 void ft_putchar_fd(char c, int fd);
 void ft_putstr_fd(char *s, int fd);
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+
 
 #endif
