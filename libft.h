@@ -6,13 +6,14 @@
 /*   By: csiqueir <carlos.felipe@hotmail;om.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/11 18:56:17 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/06/14 21:26:09 by csiqueir         ###   ########.fr       */
+/*   Updated: 2022/06/14 21:40:26 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
+#include<unistd.h>
 #include<stdlib.h>
 
 size_t  ft_strlen(const char *str);
