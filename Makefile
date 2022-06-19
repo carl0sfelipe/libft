@@ -27,7 +27,11 @@ SRCS	= 	ft_atoi.c\
 			ft_putchar_fd.c\
 			ft_putstr_fd.c\
 			ft_strmapi.c\
-			ft_striteri.c
+			ft_striteri.c\
+			ft_putnbr.c\
+			ft_putendl_fd\
+			ft_putnbr_fd\
+			ft_itoa
 
 OBJS	= ${SRCS:.c=.o}
 
@@ -45,6 +49,10 @@ ${NAME}:
 	ar -rcs ${NAME} ${OBJS}
 
 all:		${NAME}
+
+so:
+	$(CC) -fPIC $(CFLAGS) $(SRCS)
+	cc -shared -o libft.so $(OBJS)
 
 clean:
 	${RM} ${OBJS}
