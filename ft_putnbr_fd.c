@@ -1,16 +1,37 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: csiqueir <csiqueir@student.42.rio>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/06/20 20:37:16 by csiqueir          #+#    #+#             */
+/*   Updated: 2022/06/20 20:37:29 by csiqueir         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-int	ft_putnbr_fd(int nbr)
+static unsigned int	ft_signal(int n)
 {
-    char	*str;
-    int		len;
+	if (n < 0)
+		return (n * (-1));
+	else
+		return (n);
+}
 
-    str = ft_itoa(nbr);
-    len = 0;
-	while (str[len])
+void    ft_putnbr_fd(int n, int fd)
+{
+	unsigned int num;
+
+	if (n < 0)
+		ft_putchar_fd('-', fd);
+	num = ft_signal(n);
+	if (num >= 10)
 	{
-		ft_putchar_fd(str[len], 1);
-		len++;
+		ft_putnbr_fd(num / 10, fd);
+		ft_putnbr_fd(num % 10, fd);
 	}
-    return (len);
+	else
+		ft_putchar_fd(num + '0', fd);
 }
