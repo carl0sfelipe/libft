@@ -10,53 +10,29 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-//#include <stdlib.h>
-//#include <string.h>
 #include "libft.h"
 
-char	*ft_substr(const char *src, unsigned int start, size_t end)
+char *ft_substr(char const *s, unsigned int start, size_t len)
 {
-    // get the length of the destination string
-    int size = end - start;
+	size_t		i;
+	char		*dst;
+	unsigned int	tmp;
 
-	if (!src)
+	i = 0;
+	if (!(s))
 		return (NULL);
-
-    // allocate (size + 1) chars for destination (+1 for extra null character)
-    char *dest = (char*)malloc(sizeof(char) * (size + 1));
-	if (dest == NULL)
+	tmp = ft_strlen(s);
+	if (start > tmp)
+		return (ft_strdup(""));
+	dst = (char *)malloc(len+1);
+	if (!(dst))
 		return (NULL);
-    // extracts characters between start'th and end'th index from source string
-    // and copy them into the destination string
- 
-	int index = 0;
-
-    while(start < end && (src[start] != '\0'))
- {
-     dest[index] = src[start];
-     index++;
-     start++;
- }
-    // null-terminate the destination string
-    dest[index] = '\0';
- 
-    // return the destination string
-    return (dest);
+	while (i < len)
+	{
+		dst[i] = s[start];
+		start++;
+		i++;
+	}
+	dst[i] = '\0';
+	return (dst);
 }
-/*
-int main()
-{
-    char src[] = "substr function Implementation";
- 
-    int m = 7;
-    int n = 12;
- 
-    char *dest = ft_substr(src, m, n);
- 
-    printf("%s\n", dest);
-    puts(dest);
-
- 
-    return 0;
-}*/
