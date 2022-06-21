@@ -6,7 +6,7 @@
 /*   By: csiqueir <csiqueir@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/20 20:37:16 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/06/20 20:37:29 by csiqueir         ###   ########.fr       */
+/*   Updated: 2022/06/21 19:08:25 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ static unsigned int	ft_signal(int n)
 		return (n);
 }
 
-void    ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
-	unsigned int num;
+	unsigned int	num;
 
 	if (n < 0)
 		ft_putchar_fd('-', fd);
