@@ -6,7 +6,7 @@
 /*   By: csiqueir <csiqueir@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/13 20:28:16 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/06/21 18:56:06 by csiqueir         ###   ########.fr       */
+/*   Updated: 2022/06/22 19:01:21 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	unsigned int	tmp;
 
 	i = 0;
+	if (len > ft_strlen(s))
+		len = ft_strlen(s);
 	if (!(s))
 		return (NULL);
 	tmp = ft_strlen(s);

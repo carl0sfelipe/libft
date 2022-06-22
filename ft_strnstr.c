@@ -6,7 +6,7 @@
 /*   By: csiqueir <carlos.felipe@hotmail.com.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/16 19:04:09 by csiqueir          #+#    #+#             */
-/*   Updated: 2022/06/09 18:51:23 by csiqueir         ###   ########.fr       */
+/*   Updated: 2022/06/22 18:48:39 by csiqueir         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,12 +27,9 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 		if (haystack[haystack_i] == needle[needle_i])
 		{
 			result = (char *)&haystack[haystack_i];
-			while (needle[needle_i] && haystack_i < len
-				&& haystack[haystack_i] == needle[needle_i])
-			{
-				needle_i++;
-				haystack_i++;
-			}
+			while (needle[needle_i] && haystack_i + needle_i < len
+				&& haystack[haystack_i + needle_i] == needle[needle_i])
+					needle_i++;
 			if (needle_i && needle_i == ft_strlen((char *)needle))
 				return (result);
 		}	
